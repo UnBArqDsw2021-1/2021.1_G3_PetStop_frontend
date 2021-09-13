@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+
+    command: yarn start
+
+    env_file:
+      - ./.env.local
+
+    volumes:
+      - ./:/app
+      - /app/node_modules
+
+    ports:
+      - "3000:3000"
