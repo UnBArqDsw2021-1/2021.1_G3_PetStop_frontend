@@ -10,10 +10,10 @@ Nossa documentação pode ser encontrada [aqui](https://unbarqdsw2021-1.github.i
 
 ### Requisitos
 
-* [Docker](https://docs.docker.com/engine/install)
-* [docker-compose](https://docs.docker.com/compose/install/)
-* [Node/NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-* [Yarn](https://classic.yarnpkg.com/en/docs/install)
+- [Docker](https://docs.docker.com/engine/install)
+- [docker-compose](https://docs.docker.com/compose/install/)
+- [Node/NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- [Yarn](https://classic.yarnpkg.com/en/docs/install)
 
 ### Para iniciar
 
