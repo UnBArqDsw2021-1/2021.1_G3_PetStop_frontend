@@ -1,0 +1,23 @@
+:root {
+  --blue-light: #d4f1f4;
+  --blue-dark: #05445e;
+  --gray-light: #eaeaea;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body,
+#root,
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
