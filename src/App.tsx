@@ -6,6 +6,7 @@ import React from "react";
 
 // Components Imports
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 // Styles Imports
 import "./styles/global.css";
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/" component={Home} />
         </Switch>
       </Router> */}
+      <Footer />
     </div>
   );
 }
