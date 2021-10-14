@@ -5,15 +5,19 @@ import { Form } from "react-bootstrap";
 export function RegisterForm() {
   return (
     <div className="row">
-      <Form className="col-6">
+      <Form className="col-6 form_register">
+        <h2>Cadastro</h2>
         <label htmlFor="nome">Nome</label>
-        <input type="text" />
+        <input className="inputReg" type="text" />
         <label htmlFor="sobrenome">Sobrenome</label>
-        <input type="text" />
-        <label htmlFor="sobrenome">E-mail</label>
-        <input type="email" />
-        <label htmlFor="sobrenome">Senha</label>
-        <input type="text" />
+        <input className="inputReg" type="text" />
+        <label htmlFor="email">E-mail</label>
+        <input className="inputReg" type="email" />
+        <label htmlFor="senha">Senha</label>
+        <input className="inputReg" type="text" />
+        <label htmlFor="senha">Confirme Sua Senha</label>
+        <input className="inputReg" type="text" />
+        <button className="buttonReg">Cadastrar-se</button>
       </Form>
     </div>
   );

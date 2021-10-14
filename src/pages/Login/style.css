@@ -1,20 +1,26 @@
-.form_register {
+.loginBody {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--blue-light);
+  width: 98.7vw;
+  justify-content: space-evenly;
+}
+
+.form_login {
   display: flex;
   flex-direction: column;
-  margin: 30px
+  margin: 30px;
 }
 
-.regLabel {
+.loginLabel {
   color: var(--blue-light);
 }
-
-.inputReg {
+.inputLogin {
   border-radius: 5px;
   border-width: 0;
   height: 30px;
 }
-
-.buttonReg {
+.buttonLogin {
   background-color: var(--blue-dark);
   color: white;
   padding: 5px;
@@ -23,7 +29,7 @@
   margin-top: 10px;
   transition: .3s;
 }
-.buttonReg:hover {
+.buttonLogin:hover {
   background-color: var(--blue-light);
   color: var(--blue-dark);
   border-width: 2px;
