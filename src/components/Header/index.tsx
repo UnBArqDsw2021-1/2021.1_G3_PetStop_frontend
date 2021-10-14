@@ -25,7 +25,7 @@ export function Header() {
         </nav>
         <div className="login-container">
           <BiUserCircle size={50} color="var(--blue-light)" />
-          <a href="#">
+          <a href="/login">
             Olá, Entre
             <br />
             ou cadastre-se
