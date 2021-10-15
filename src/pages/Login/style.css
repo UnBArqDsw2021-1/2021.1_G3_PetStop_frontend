@@ -46,7 +46,7 @@
 
 .loginBody div {
   width: 90%;
-  max-width: 420px;
+  max-width: 450px;
 }
 
 .loginBody div label {
@@ -57,6 +57,7 @@
   border: 3px solid var(--gray-medium) !important;
   height: 40px;
   padding: 0 0.5rem;
+  width: 100%;
 }
 
 .loginBody div h2 {
