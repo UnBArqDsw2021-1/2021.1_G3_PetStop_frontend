@@ -9,6 +9,7 @@ export function RegisterForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPass] = useState("");
+  const [passConfirm, setPassConfirm] = useState("");
 
   async function handleSignUp() {
     const user = {
@@ -25,6 +26,7 @@ export function RegisterForm() {
       setName("");
       setEmail("");
       setPass("");
+      setPassConfirm("");
     } catch {
       alert("Erro ao realizar o cadstro favor tentar novamente.");
     }
@@ -57,7 +59,13 @@ export function RegisterForm() {
         value={password}
       />
       <label htmlFor="senha">Confirme Sua Senha</label>
-      <input className="inputReg" type="password" placeholder="******" />
+      <input
+        className="inputReg"
+        type="password"
+        placeholder="******"
+        value={passConfirm}
+        onChange={(e) => setPassConfirm(e.target.value)}
+      />
       <button
         className="buttonReg"
         onClick={(e) => {

@@ -1,5 +1,7 @@
 import React, { createContext, useState, useEffect, useContext } from "react";
 
+import { signIn as login } from "../services/auth";
+
 type User = {
   name: string;
   email: string;
@@ -29,13 +31,17 @@ export const AuthProvider: React.FC = ({ children }) => {
     getStoredData();
   }, []);
 
+  useEffect(() => {
+    localStorage.setItem("@PetStop:user", JSON.stringify(user));
+  }, [user]);
+
   async function signIn(email: string, password: string): Promise<void> {
+    login(email, password);
+
     setUser({
       name: "Nome de Teste",
       email: "teste@teste.com",
     });
-
-    localStorage.setItem("@PetStop:user", JSON.stringify(user));
   }
 
   async function signOut() {
