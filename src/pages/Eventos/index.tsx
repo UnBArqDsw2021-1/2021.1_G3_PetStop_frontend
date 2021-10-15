@@ -68,7 +68,12 @@ export function Eventos() {
   return (
     <div className="events-page">
       <div className="events-container">
-        <h1>NOSSOS EVENTOS</h1>
+        <div className="title">
+          <h1>NOSSOS EVENTOS</h1>
+          <button className="reg-btn">
+            <a href="/events-register">Cadastrar Evento</a>
+          </button>
+        </div>
         <div className="events-list">
           {events.map((eventItem) => (
             <div className="event-item" key={eventItem.id}>
