@@ -1,0 +1,96 @@
+.events-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 100%;
+  padding: 4rem;
+}
+
+.events-page .events-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.events-page .events-container h1 {
+    color: var(--blue-dark);
+    font-size: 1.75rem;
+}
+
+.events-page .events-container .events-list {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.events-page .events-container .events-list .event-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 22.5%;
+    margin-top: 2rem;
+}
+
+.events-page .events-container .events-list .event-item .event-pic {
+    width: 100%;
+    height: 12rem;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.events-page .events-container .events-list .event-item .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0.75rem 0;
+}
+
+.events-page .events-container .events-list .event-item .text-container * + * {
+    margin-top: 0.25rem;
+}
+
+.events-page .events-container .events-list .event-item .text-container .event-local {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--blue-dark);
+}
+
+.events-page .events-container .events-list .event-item .text-container p {
+    font-size: 0.75rem;
+    color: var(--blue-dark);
+    text-align: justify;
+}
+
+.events-page .events-container .events-list .event-item .join-btn {
+    outline: none;
+    border: 0;
+    border-radius: 0.6rem;
+
+    width: 50%;
+    margin-top: 0.25rem;
+    background-color: var(--gray-light);
+
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--blue-dark);
+    padding: 0.2rem;
+
+    cursor: pointer;
+    transition: filter 0.3s;
+}
+
+.events-page .events-container .events-list .event-item .join-btn:hover {
+    filter: brightness(0.9);
+}
