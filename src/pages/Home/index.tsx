@@ -1,9 +1,15 @@
 import React from "react";
+import "./styles.css";
 
 export function Home() {
   return (
-    <div>
-      <h1>home</h1>
+    <div className="container">
+      <div className="top-container">
+        <div>Nossa Missão</div>
+        <div>Depoimentos</div>
+        <div>Quem Somos</div>
+      </div>
+      <div className="down-container">RECOMENDACAO</div>
     </div>
   );
 }
