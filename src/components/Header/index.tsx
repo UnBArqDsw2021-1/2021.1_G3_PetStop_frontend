@@ -20,7 +20,7 @@ export function Header() {
         <nav>
           <a href="#">Eventos</a>
           <a href="#">Doações</a>
-          <a href="#">Adoções</a>
+          <a href="/adoptions">Adoções</a>
           <a href="#">Seja um voluntário</a>
         </nav>
         <div className="login-container">
