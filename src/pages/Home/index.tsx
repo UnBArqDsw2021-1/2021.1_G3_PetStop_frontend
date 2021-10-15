@@ -19,18 +19,33 @@ export function Home() {
     setRecommendation(require("./data.json"));
   }, []);
 
+  function RecommendationList(prop: DataProps[]): JSX.Element[] {
+    const listItems: JSX.Element[] = prop.map(
+      (item: DataProps, index: number) => (
+        <div className="recommendation-cart" key={"recommendation" + index}>
+          <img
+            className="recommendation-img"
+            src={"data:image/png;base64, " + item.image}
+            alt="event-image"
+          />
+          <h2>{item.title}</h2>
+          {!!item.date && <p>{item.date}</p>}
+          <p>{item.descricao}</p>
+        </div>
+      )
+    );
+    return listItems;
+  }
+
   return (
     <div className="container">
       <div className="top-container">
         <div className="about-us">
           <h2>Nossa Missão</h2>
           <p>
-            Desenvolver e executar ações para a<br />
-            promoção da convivência ética,
-            <br />
-            responsável e sustentável entre as pessoas,
-            <br />
-            os animais e o meio ambiente.
+            Desenvolver e executar ações para a promoção da convivência ética,
+            responsável e sustentável entre as pessoas, os animais e o meio
+            ambiente.
           </p>
           <button className="about-us-buttom">
             <h3>Saiba mais</h3>
@@ -59,7 +74,9 @@ export function Home() {
           </p>
         </div>
       </div>
-      <div className="bottom-container">RECOMENDACOES</div>
+      <div className="bottom-container">
+        {RecommendationList(recommendation)}
+      </div>
     </div>
   );
 }

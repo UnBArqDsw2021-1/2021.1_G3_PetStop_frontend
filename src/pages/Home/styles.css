@@ -13,20 +13,20 @@
   display: flex;
   flex: 1;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   width: 100%;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .top-container {
-  background-color: white;
   justify-content: space-around;
+  background-color: white;
 }
 
 .bottom-container {
   background-color: var(--blue-light);
+  overflow-x: auto;
 }
 
 .about-us-buttom {
@@ -35,6 +35,10 @@
   padding: 0.8rem;
   border-radius: 10px;
   border: 0px;
+}
+
+.about-us {
+  width: 25%;
 }
 
 .card {
@@ -66,6 +70,23 @@
 #img-testimony {
   height: 10rem;
   width: 10rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+}
+
+.recommendation-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  width: 30%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.recommendation-img {
+  height: 11rem;
+  width: 20rem;
   margin-right: 1rem;
   border-radius: 10px;
 }
