@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+.top-container,
+.bottom-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.top-container {
+  justify-content: space-around;
+  background-color: white;
+}
+
+.bottom-container {
+  background-color: var(--blue-light);
+  overflow-x: auto;
+}
+
+.about-us-buttom {
+  background-color: var(--gray-light);
+  margin-top: 10px;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 0px;
+}
+
+.about-us {
+  width: 25%;
+}
+
+.card {
+  background-color: var(--gray-light);
+  padding: 1rem;
+  min-width: 25%;
+  max-width: 30%;
+}
+
+.card-title {
+  color: var(--blue-dark);
+  font-weight: 600;
+  text-align: center;
+  width: 10rem;
+  border: 1px solid #189ab4;
+  background-color: #c4c4c4;
+  box-shadow: 1px 3px 5px;
+  margin-bottom: 0.5rem;
+  margin-left: -2.3rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#img-testimony {
+  height: 10rem;
+  width: 10rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+}
+
+.recommendation-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  width: 30%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.recommendation-img {
+  height: 11rem;
+  width: 20rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+}
