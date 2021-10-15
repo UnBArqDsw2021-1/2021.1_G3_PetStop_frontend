@@ -18,7 +18,7 @@ export function Header() {
           <img src={imgLogo} alt="Logo Petstop" className="logo" />
         </a>
         <nav>
-          <a href="#">Eventos</a>
+          <a href="/events">Eventos</a>
           <a href="#">Doações</a>
           <a href="#">Adoções</a>
           <a href="#">Seja um voluntário</a>
