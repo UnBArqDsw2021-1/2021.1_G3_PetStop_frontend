@@ -2,6 +2,7 @@
   --blue-light: #d4f1f4;
   --blue-dark: #05445e;
   --gray-light: #eaeaea;
+  --gray-medium: #c4c4c4;
 }
 
 * {
@@ -9,6 +10,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  outline: none !important;
 }
 
 html,

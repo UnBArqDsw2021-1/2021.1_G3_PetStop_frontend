@@ -4,6 +4,7 @@ import React from "react";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 
+// Utils Import
 import { Router } from "./routes";
 import { AuthProvider } from "./hooks/useAuth";
 
