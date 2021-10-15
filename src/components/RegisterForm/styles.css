@@ -1,7 +1,7 @@
 .form_register {
   display: flex;
   flex-direction: column;
-  margin: 30px
+  margin: 30px;
 }
 
 .regLabel {
@@ -20,11 +20,16 @@
   padding: 5px;
   border-radius: 5px;
   font-weight: 600;
-  margin-top: 10px;
-  transition: .3s;
+  transition: filter 0.3s;
+  outline: none !important;
+  border: 0;
+  height: 45px;
+  color: var(--blue-light);
+  font-size: 1.125rem;
+  margin-top: 1.5rem;
 }
+
 .buttonReg:hover {
-  background-color: var(--blue-light);
-  color: var(--blue-dark);
-  border-width: 2px;
+  filter: brightness(0.8);
+  cursor: pointer;
 }
