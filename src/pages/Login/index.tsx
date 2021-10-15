@@ -1,7 +1,10 @@
 import React from "react";
-import { RegisterForm } from "../../components/RegisterForm/";
 import { Form } from "react-bootstrap";
 
+// Components Imports
+import { RegisterForm } from "../../components/RegisterForm/";
+
+// Styles Imports
 import "./style.css";
 
 export function Login() {
