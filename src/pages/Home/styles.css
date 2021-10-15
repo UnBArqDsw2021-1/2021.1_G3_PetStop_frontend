@@ -9,13 +9,15 @@
 }
 
 .top-container,
-.down-container {
+.bottom-container {
   display: flex;
   flex: 1;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .top-container {
@@ -23,7 +25,7 @@
   justify-content: space-around;
 }
 
-.down-container {
+.bottom-container {
   background-color: var(--blue-light);
 }
 

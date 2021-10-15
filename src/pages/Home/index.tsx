@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./styles.css";
 
 import imgTestimony from "../../assets/img22.jpg";
 
 export function Home() {
+  interface DataProps {
+    title: string;
+    date: string;
+    descricao: string;
+    image: string;
+  }
+
+  const [recommendation, setRecommendation] = useState<DataProps[]>(
+    require("./data.json")
+  );
+
+  useEffect(() => {
+    setRecommendation(require("./data.json"));
+  }, []);
+
   return (
     <div className="container">
       <div className="top-container">
@@ -44,7 +59,7 @@ export function Home() {
           </p>
         </div>
       </div>
-      <div className="bottom-container">RECOMENDACAO</div>
+      <div className="bottom-container">RECOMENDACOES</div>
     </div>
   );
 }
